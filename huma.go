@@ -962,7 +962,6 @@ func Register[I, O any](api API, op Operation, handler func(context.Context, *I)
 								}
 								f.Set(enumValues)
 							}
-							f.Set(reflect.ValueOf(values))
 							pv = values
 
 						case reflect.Int:
